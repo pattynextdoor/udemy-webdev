@@ -1,12 +1,12 @@
 var secretNumber = 4;
 
-var guess = prompt("Guess a number");
+var guess = Number(prompt("Guess a number"));
 
-if(Number(guess) === secretNumber) {
+if(guess === secretNumber) {
   alert("You got it right!");
 }
 
-else if(Number(guess) > secretNumber){
+else if(guess > secretNumber){
   alert("Too high. Guess again.");
 }
 
